@@ -1,0 +1,30 @@
+:root {
+  --sidebar-width: 250px;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: var(--sidebar-width);
+  border-right: 1px solid var(--light);
+}
+
+.sidebar h1, a {
+  padding: 8px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: var(--light);
+}
+
+.sidebar>a:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.content {
+  margin-left: var(--sidebar-width);
+  padding: 8px;
+}
